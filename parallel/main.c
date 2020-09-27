@@ -103,7 +103,7 @@ int main(int argc, char *argv[]) {
     } else {
         printf("\n Analyzing numbers until this limit: %d \n", limit);
         pthread_t threads[numOfThreads]; 
-        float xlimitPerThread = limit / numOfThreads;
+        int limitPerThread = limit / numOfThreads;
         int start = 2;
         int end = limitPerThread;
         int rc;
